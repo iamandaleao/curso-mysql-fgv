@@ -26,6 +26,22 @@ WHERE ai.country = 'Brazil'
 AND ai.ref_year in (1900, 1910, 1920, 1930, 1940, 1950, 1960, 1970, 1980, 1990, 2000, 2010,2020)
 ORDER BY ai.ref_year;	
 
+
+select pop.ref_year, tot_pop, tot_deaths, mean_usd, gdp_pc, f.mean_babies ,le.tot_years 
+	from population pop 
+	join child_mortality cm 
+	join avg_income ai  
+	join gdp_pc gp 
+	join fertility f 
+	join life_expectancy le 
+	on pop.country = cm.country and pop.ref_year = cm.ref_year 
+	and pop.country = ai.country and pop.ref_year = ai.ref_year 
+	and pop.country = gp.country and pop.ref_year = gp.ref_year 
+	and pop.country = f.country and pop.ref_year = f.ref_year
+	and pop.country = le.country and pop.ref_year = le.ref_year
+	where pop.country = "Brazil" and pop.ref_year % 10 = 0 
+	and pop.ref_year >= 1900 and pop.ref_year <= 2020
+
 /*
 Observe que a taxa de mortalidade apresentou uma queda constante ao longo das décadas, enquanto a renda média diária cresceu de forma consistente. Os outros indicadores apresentaram oscilações, como o PIB per capita, que aumentou a cada década, mas registrou uma diminuição entre 1980 e 1990, bem como entre 2010 e 2020. A taxa de fertilidade, pela sua vez, foi crescente de 1900 até 1960, mas caiu de maneira acentuada nas décadas subsequentes.
 
