@@ -1,0 +1,1 @@
+-- Questão 5 - Consulte a taxa de mortalidade infantil e de natalidade, no ano 2000, de algumas ilhas caribenhas: Aruba, Cuba, Dominica, Martinica (Martinique) e Porto Rico (Puerto Rico). Use as tabelas fertility e child_mortality. Observe que é necessário utilizar um FULL JOIN para retornar todos os países na consulta.
