@@ -13,5 +13,5 @@ AND cm.ref_year = f.ref_year
 WHERE cm.country IN ('Andorra', 'Holy See', 'Liechtenstein', 'Malta', 'Monaco', 'San Marino')
 AND cm.ref_year= 2000;	
 			
--- Comentário: O resultado é: Exceto pela ordem das linhas, pois não usamos ORDER BY, o resultado é o mesmo.
+-- Comentário: Exceto pela ordem das linhas, pois não usamos ORDER BY, o resultado é o mesmo.
 
