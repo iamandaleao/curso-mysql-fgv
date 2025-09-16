@@ -16,5 +16,4 @@ North America	6.49
 
 As regiões encontradas são:
 
-tabela_m3_u2d
 Calculamos a média de mortes de bebês a cada 1000 nascidos vivos usando AVG agrupando por região (wb_regions) e chamamos o campo de avg_deaths. Agrupamos por região via GROUP BY e filtramos os resultados para termos somente as regiões com média menor que 20 por meio da cláusula HAVING.*/
