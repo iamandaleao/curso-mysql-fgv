@@ -16,7 +16,7 @@ ORDER BY tot_giga_co2 DESC;
 
 Como esperado, as regiões mais industrializadas apresentam maiores emissões. A América do Norte ocupa a terceira posição, mas se você substituir a soma pela média, verá que a região sobe para o primeiro lugar, enquanto a Europa desce para a quinta posição. Experimente fazer o teste.
 
-tabela_m3_u2c
+
 Neste exercício, agrupamos usando GROUP BY em uma única coluna, wb_regions, para calcular a média de emissões por região. Além disso, ordenamos os resultados com ORDER BY DESC pela soma calculada, a fim de identificar os maiores emissores em 2022.
 
 Observe que realizamos várias operações aritméticas no SELECT para obter o valor desejado: multiplicamos tot_pop por co2_pc para estimar o total de emissões, já que a tabela co2_emissions_pc contém as emissões per capita de cada país. Em seguida, somamos os resultados agrupando por região, dividimos o total por 109 para convertê-lo em gigatoneladas e arredondamos o resultado para duas casas decimais utilizando a função ROUND.*/
