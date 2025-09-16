@@ -12,12 +12,12 @@ WHERE life_expectancy.ref_year = 1990
   -- Gabarito:
 
 SELECT 
-  MIN (Je.tot_years) AS min_years, 
+  MIN (le.tot_years) AS min_years, 
 	AVG (le.tot_years) AS avg_years, 
 	MAX (le.tot_years) AS max_years
 FROM life_expectancy le
 JOIN country c ON le.country = c.country 
-WHERE le.ref_year = 1900
+WHERE le.ref_year = 1990
 	AND c.wb_regions = 'Latin America & Caribbean';
 			
 /*
