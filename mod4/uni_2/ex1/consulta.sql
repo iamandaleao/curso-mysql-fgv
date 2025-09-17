@@ -33,7 +33,7 @@ FROM men_years_at_school
 WHERE ref_year BETWEEN 2000 AND 2009
   AND country = 'Brazil';
 
-Todas as linhas estão de volta!
+-- Todas as linhas estão de volta!
 
 -- Realizado:
 
